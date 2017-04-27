@@ -24,19 +24,19 @@ void loop(){
      distancia = 300;  
   }
   
-  if (distancia <= 100){
+  else if (distancia <= 100){
      digitalWrite(WhiteLed, HIGH);   
      digitalWrite(GreenLed, LOW);
      digitalWrite(BlueLed, LOW);
   }
 
-  if ((distancia <= 200.00) && (distancia > 100)){
+  else if ((distancia <= 200.00) && (distancia > 100)){
     digitalWrite(BlueLed, HIGH);   
     digitalWrite(WhiteLed, LOW);
     digitalWrite(GreenLed, LOW);
   }
 
-  if (distancia > 200.00){
+  else (distancia > 200.00){
     digitalWrite(GreenLed, HIGH);   
     digitalWrite(WhiteLed, LOW);
     digitalWrite(BlueLed, LOW);
